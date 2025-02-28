@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumsCell" id="qPg-kG-SAI" customClass="AlbumsCell" customModule="BostaAssessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dPY-Og-9CO">
+                <rect key="frame" x="0.0" y="0.0" width="163" height="148"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oLg-ef-5l6">
+                        <rect key="frame" x="34.666666666666657" y="29" width="94" height="90.666666666666657"/>
+                        <color key="tintColor" red="0.8392156959" green="0.33725491169999999" blue="0.49803921579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="80" scale="default"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oLg-ef-5l6" firstAttribute="centerX" secondItem="dPY-Og-9CO" secondAttribute="centerX" id="Tli-NF-05C"/>
+                    <constraint firstItem="oLg-ef-5l6" firstAttribute="centerY" secondItem="dPY-Og-9CO" secondAttribute="centerY" id="zNI-9U-9Cg"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="170" height="164"/>
+            <connections>
+                <outlet property="albumImages" destination="oLg-ef-5l6" id="VcX-1g-7y3"/>
+            </connections>
+            <point key="canvasLocation" x="-104.58015267175573" y="-48.591549295774648"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

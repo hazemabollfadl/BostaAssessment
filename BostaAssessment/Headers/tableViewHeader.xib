@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewHeader" rowHeight="130" id="kcX-8i-TSi" customClass="tableViewHeader" customModule="BostaAssessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kcX-8i-TSi" id="2AI-q0-Jsd">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="132"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKh-BC-ssB">
+                        <rect key="frame" x="19.999999999999993" y="5" width="93.333333333333314" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rko-OB-os2">
+                        <rect key="frame" x="20" y="56.000000000000007" width="74.666666666666671" height="20.333333333333336"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="fVz-vd-dOw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Albums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ts1-MT-Ldn">
+                        <rect key="frame" x="20" y="98" width="105" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FKh-BC-ssB" firstAttribute="leading" secondItem="2AI-q0-Jsd" secondAttribute="leading" constant="20" id="3iO-Zk-nb1"/>
+                    <constraint firstItem="FKh-BC-ssB" firstAttribute="top" secondItem="2AI-q0-Jsd" secondAttribute="top" constant="5" id="Kh8-cO-bht"/>
+                    <constraint firstItem="rko-OB-os2" firstAttribute="centerY" secondItem="2AI-q0-Jsd" secondAttribute="centerY" id="bIv-gx-xyf"/>
+                    <constraint firstItem="ts1-MT-Ldn" firstAttribute="leading" secondItem="2AI-q0-Jsd" secondAttribute="leading" constant="20" id="ogq-nA-kKq"/>
+                    <constraint firstItem="rko-OB-os2" firstAttribute="leading" secondItem="2AI-q0-Jsd" secondAttribute="leading" constant="20" id="qu9-86-ow2"/>
+                    <constraint firstAttribute="bottom" secondItem="ts1-MT-Ldn" secondAttribute="bottom" constant="10" id="uGZ-1m-XT0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="subTitleHeader" destination="rko-OB-os2" id="PfQ-zn-NxQ"/>
+                <outlet property="titleHeader" destination="FKh-BC-ssB" id="Lun-tx-o4R"/>
+            </connections>
+            <point key="canvasLocation" x="206.87022900763358" y="48.591549295774648"/>
+        </tableViewCell>
+    </objects>
+</document>
